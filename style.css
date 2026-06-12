@@ -50,6 +50,16 @@ header {
     left: 0px;
     right: 0px;
     transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-80px);
+    animation: slideDown 2s ease forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header:hover {
@@ -94,7 +104,7 @@ header:hover {
 .hero h1 {
     font-size: 25rem;
     color: var(--text-light);
-    font-family: DancingScript;
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 0.9;
 
 }
@@ -106,7 +116,7 @@ span {
 .hero h2 {
     font-size: 15rem;
     color: var(--dominant);
-    font-family: DancingScript;
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .content {
@@ -117,7 +127,16 @@ span {
     justify-content: center;
     align-items: start;
     gap: 20px;
-    transform: scale(0.7);
+    transform: translateX(-100px) scale(0.7);
+    opacity: 0;
+    animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(0.7);
+    }
 }
 
 .buttons {
@@ -204,6 +223,7 @@ span {
 .about-text h1 {
     font-size: 10rem;
     color: var(--dominant);
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .about-text p {
@@ -236,6 +256,7 @@ span {
 #menu h1 {
     color: var(--dominant);
     font-size: 10rem;
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #menu h2 {
@@ -258,4 +279,90 @@ span {
 
 #menus img {
     width: 50%;
+}
+
+#contact {
+    gap: 20px;
+}
+
+#contact h1 {
+    color: var(--dominant);
+    font-size: 10rem;
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    width: 150rem;
+    height: 35rem;
+    background-color: var(--bg-light);
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10rem;
+    padding: 10rem;
+    transition: all 0.5s ease;
+}
+
+.card h1 {
+    font-size: 10rem;
+    color: var(--dominant);
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card a {
+    font-size: 5rem;
+    color: var(--text-light);
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.card ul {
+    font-size: 3rem;
+    color: var(--text-light);
+    font-family: DancingScript, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card li {
+    padding-left: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px var(--dominant);
+}
+
+.btn {
+    transition: all 0.5s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.btn:hover {
+    border-bottom: 1px solid var(--text-light);
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.fadein.animate {
+    animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
