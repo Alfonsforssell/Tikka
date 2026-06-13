@@ -358,11 +358,37 @@ span {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateX(-100px);
+        position: relative;
+        left: -100px;
     }
 
     to {
         opacity: 1;
-        transform: translateX(0);
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        margin: auto;
+    }
+
+    .about-photos {
+        flex-direction: row;
+    }
+
+    #about,
+    #menu,
+    #pictures,
+    #contact,
+    #ratings {
+        padding: 10rem 0rem;
+    }
+
+    .about-photos img {
+        width: 50%;
     }
 }
