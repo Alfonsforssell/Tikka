@@ -19,7 +19,6 @@
                 <li><a class="btn" href="#menu">Meny</a></li>
                 <li><a class="btn" href="#pictures">Bilder</a></li>
                 <li><a class="btn" href="#contact">Kontakt</a></li>
-                <li><a class="btn" href="#ratings">Recensioner</a></li>
             </ul>
         </div>
         <div class="right"></div>
@@ -33,7 +32,6 @@
                 <a href="#contact">Kontakt</a>
             </div>
         </div>
-        <a href="#about"></a>
     </div>
     <main>
         <div id="about" class="fadein">
@@ -63,49 +61,93 @@
         <div class="separate"></div>
         <div id="menu" class="fadein">
             <h1>Vår meny</h1>
-            <h2>Nedan ser ni vår avhämtningsmeny. Ring för beställning <a class="btn" href="tel:040-643 74 07">040-643
+            <h2>Nedan ser ni vår avhämtningsmeny. Ring för beställning <a class="btn" href="tel:040-643 74 07"
+                    target="_blank">040-643
                     74 07</a>
             </h2>
             <div id="menus">
-                <img src="assets/images/menu1.jpg" alt="menu">
-                <img src="assets/images/menu2.jpg" alt="menu">
+                <a href="menu.html"><img class="menu" src="assets/images/menu1.jpg" alt="menu"></a>
+                <a href="menu.html"><img class="menu" src="assets/images/menu2.jpg" alt="menu"></a>
             </div>
         </div>
         <div class="separate"></div>
-        <div id="pictures" class="fadein"></div>
+        <div id="pictures" class="fadein">
+            <h1>Fräsch och välsmakande mat - se våra rätter</h1>
+            <div id="container">
+                <img id="one" src="assets/images/508406352_17932753878047539_3655578364755102463_n.jpg" alt="foodpic">
+                <img id="two" src="assets/images/514492459_17934255297047539_366084608996333927_n.jpeg" alt="foodpic">
+                <img id="three" src="assets/images/514518922_17934065244047539_977982669412973534_n.jpg" alt="foodpic">
+                <img id="four" src="assets/images/516414387_17934597333047539_6167725477036185432_n.jpeg" alt="foodpic">
+                <img id="five" src="assets/images/502969822_17930748240047539_4839322422038593561_n.jpg" alt="foodpic">
+                <img id="six" src="assets/images/566533016_17946072855047539_1702701317353326853_n.jpg" alt="foodpic">
+                <p class="desc p-one">Namn på rätt</p>
+                <p class="desc p-two">Namn på rätt</p>
+                <p class="desc p-three">Namn på rätt</p>
+                <p class="desc p-four">Namn på rätt</p>
+                <p class="desc p-five">Namn på rätt</p>
+                <p class="desc p-six">Namn på rätt</p>
+            </div>
+        </div>
         <div class="separate"></div>
         <div id="contact" class="fadein">
-            <h1>Kontakt</h1>
-            <div class="card">
-                <h1>Telefon</h1>
-                <a class="btn" href="tel:040-643 74 07">040-643 74 07</a>
+            <h2>Kontakt</h2>
+            <div id="cards">
+                <div class="card">
+                    <h1>Telefon</h1>
+                    <a class="btn" href="tel:040-643 74 07" target="_blank">040-643 74 07</a>
+                </div>
+                <div class="card">
+                    <h1>Adress</h1>
+                    <a class="btn" href="https://maps.app.goo.gl/VpqfkiF6p2GovvTt6" target="_blank">Polisvägen 3, 236 31
+                        Höllviken</a>
+                </div>
+                <div class="card">
+                    <h1>Mail</h1>
+                    <a class="btn" href="mailto:tikka.hollviken@gmail.com" target="_blank">Tikka.hollviken@gmail.com</a>
+                </div>
+                <div class="card">
+                    <h1>Öppettider</h1>
+                    <ul>
+                        <li>Mån: Stängt</li>
+                        <li>Tis - Tor: 16.00-22.00</li>
+                        <li>Fre - Lör: 16.00-Sent</li>
+                        <li>Sön - 16.00-22.00</li>
+
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <h1>Öppettider</h1>
-                <ul>
-                    <li>Mån - Stängt</li>
-                    <li>Fre - 16.00-Sent</li>
-                    <li>Tis - 16.00-22.00</li>
-                    <li>Lör - 16.00-Sent</li>
-                    <li>Ons - 16.00-22.00</li>
-                    <li>Sön - 16.00-22.00</li>
-                    <li>Tor - 16.00-22.00</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h1>Adress</h1>
-                <a class="btn" href="https://maps.app.goo.gl/VpqfkiF6p2GovvTt6">Polisvägen 3, 236 31 Höllviken</a>
-            </div>
-            <div class="card">
-                <h1>Mail</h1>
-                <a class="btn" href="mailto:tikka.hollviken@gmail.com">Tikka.hollviken@gmail.com</a>
+            <div id="events">
+                <h1>Vill du läsa mer om våra evenemang?</h1>
+                <p><a href="https://www.instagram.com/tikka.restaurang/" target="_blank">Klicka här</a>
+                    eller följ oss på
+                    instagram:
+                    @tikka.restaurang</p>
             </div>
         </div>
-        <div class="separate"></div>
-        <div id="ratings" class="fadein"></div>
-        <div class="separate"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <div id="copyright">
+            <img src="assets/images/logo.png" alt="logo">
+            <h2>Copyright © 2026 Tikka. All rights reserved.</h2>
+            <h2>Created by Alfons Forssell</h2>
+        </div>
+        <div id="links">
+            <a class="btn" href="#">Hem</a>
+            <a class="btn" href="#about">Om oss</a>
+            <a class="btn" href="#menu">Meny</a>
+            <a class="btn" href="#pictures">Bilder</a>
+            <a class="btn" href="#contact">Kontakt</a>
+        </div>
+        <div id="socials">
+            <a href="https://www.instagram.com/tikka.restaurang/"><img src="assets/icons/instagram.jpg"
+                    alt="instagram"></a>
+            <a href="https://www.facebook.com/people/Tikka-Indisk-restaurang-bar/61560974641812/"><img
+                    src="assets/icons/facebook.jpg" alt="facebook"></a>
+            <a href="tel:040-643 74 07"><img src="assets/icons/phone.jpg" alt="phone"></a>
+            <a href="mailto:tikka.hollviken@gmail.com"><img src="assets/icons/mail.jpg" alt="mail"></a>
+            <a href="https://maps.app.goo.gl/VpqfkiF6p2GovvTt6"><img src="assets/icons/maps.jpg" alt="maps"></a>
+        </div>
+    </footer>
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

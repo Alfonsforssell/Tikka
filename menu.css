@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 5px;
+}
+
+:root {
+    --dominant: #92C3B8;
+    --complementary: green;
+    --margin-xxs: .25rem;
+    --margin-xs: .5rem;
+    --margin-s: .75rem;
+    --margin-m: 1rem;
+    --margin-l: 1.25rem;
+    --margin-xl: 1.75rem;
+    --margin-xxl: 2.5rem;
+
+    --bg-light: hsl(0, 0%, 20%);
+    --bg: hsl(0, 0%, 10%);
+    --bg-dark: hsl(0, 0%, 0%);
+
+    --text-dark: hsl(0, 0%, 0%);
+    --text: hsl(0, 0%, 42%);
+    --text-light: hsl(0, 0%, 100%);
+    --invert: 0;
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url(assets/fonts/DancingScript-Regular.ttf);
+}
+
+body {
+    background: var(--bg);
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    padding: 0rem 10rem;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dominant);
+    font-size: 5rem;
+    border-bottom: 2px solid #92c3b800;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--dominant);
+    transform: scale(1.1);
+}
+
+main {
+    width: 100%;
+    padding: 10rem;
+}
+
+img {
+    width: 100%;
+}
+
+@media (min-width: 550px) {
+
+    main :nth-child(2),
+    main :nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        padding: 2rem;
+    }
+
+    .img-wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .img-wrap img {
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+        transform: translateX(0%);
+    }
+
+    .img-wrap:nth-child(odd) img {
+        transform: translateX(-50%);
+    }
+}
