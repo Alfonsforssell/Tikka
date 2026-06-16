@@ -46,23 +46,13 @@ header {
     height: 150px;
     background: none;
     z-index: 2;
-    position: fixed;
+    position: absolute;
     left: 0px;
     right: 0px;
     transition: all 0.5s ease-in-out;
     opacity: 0;
     transform: translateY(-80px);
     animation: slideDown 2s ease forwards;
-    backdrop-filter: blur(5px);
-    -webkit-mask-image: linear-gradient(to bottom,
-            black 0px,
-            black 100px,
-            transparent 150px);
-
-    mask-image: linear-gradient(to bottom,
-            black 0px,
-            black 100px,
-            transparent 150px);
 }
 
 @keyframes slideDown {
@@ -551,6 +541,20 @@ footer {
 }
 
 @media (min-width: 1400px) {
+    header {
+        position: fixed;
+        backdrop-filter: blur(5px);
+        -webkit-mask-image: linear-gradient(to bottom,
+                black 0px,
+                black 100px,
+                transparent 150px);
+
+        mask-image: linear-gradient(to bottom,
+                black 0px,
+                black 100px,
+                transparent 150px);
+    }
+
     #socials img:hover {
         transform: scale(1.1);
     }
@@ -625,6 +629,10 @@ footer {
 }
 
 @media (max-width: 700px) {
+    .left img {
+        display: none;
+    }
+
     .mid ul {
         gap: 5rem;
     }
